@@ -3,7 +3,7 @@ import TodoItem from '../TodoItem'
 
 const TodoList = props => {
   return (
-    <ul>
+    <ul className='lists'>
       {props.todos.map((todo, index) => {
         return (
           <TodoItem

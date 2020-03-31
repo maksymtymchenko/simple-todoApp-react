@@ -9,7 +9,7 @@ const TodoItem = ({ todo, index, onChange }) => {
     classes.push('done')
   }
   return (
-    <li>
+    <li className='lists_item'>
       <span className={classes.join(' ')}>
         <input
           type='checkbox'

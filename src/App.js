@@ -44,7 +44,7 @@ const App = () => {
   return (
     <Context.Provider value={{ removeTodo }}>
       <div className='container'>
-        <h1>Todo App</h1>
+        <h1 className='title'>React Todo App</h1>
         <AddTodo onCreate={addTodo} />
         {todos.length ? (
           <TodoList todos={todos} onToggle={toggleTodo} />

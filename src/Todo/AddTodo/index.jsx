@@ -12,13 +12,16 @@ const AddTodo = ({ onCreate }) => {
   }
 
   return (
-    <form onSubmit={submitHandler}>
+    <form onSubmit={submitHandler} className='form'>
       <input
+        className='form_input'
         value={value}
         onChange={event => setValue(event.target.value)}
         type='text'
       />
-      <button type='submit'>Add Todo</button>
+      <button className='form_btn' type='submit'>
+        Add Todo
+      </button>
     </form>
   )
 }
